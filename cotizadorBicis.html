@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de bicicletas</title>
+
+    <link rel="stylesheet" href="cotizador.css">
+    <link rel="shortcut icon" href="imgs/icon-bici.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <header class="header">
+        
+        <div class="icon">
+            <a href="#" class="enlace"> 
+                <img class="logo" src="imgs/icon-bici.png" alt="logo">
+            </a>
+            <h1 class="name-web">BSport</h1>
+        </div>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle"> <img class="menu" src="imgs/menu.png" alt="menu"> </label>
+
+        <nav class="navigation">
+            <ul class="">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Cotizador</a></li> 
+                <li> 
+                    <a href="Formulario.html">Formulario</a>
+                </li>
+                <li> 
+                    <a href="ComboBox.html">ComboBox</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fondo-title">
+        <div class="fondo-difuminado">
+            <h1 class="title-img">B I C I S P O R T</h1>
+            <p class="eslogan">"¡Conquista la Naturaleza, Rueda a la Aventura!"</p>
+        </div>
+    </div>
+
+
+    <!--Aqui empiezan los grid para el cotizador-->
+    <div class="grid">
+        <div class="Categoria">
+            <div class="name">
+                <h2>Suspensión</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Suspensión" value="15000" id="valor1"><label for="valor1">Doble</label><strong>$15,000</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Suspensión" value="9000" id="valor2"><label for="valor2">Delantera</label><strong>$9,000</strong>
+
+                </div>
+                <div>
+                    <input type="radio" name="Suspensión" value="7000" id="valor3"><label for="valor3">Rigida</label><strong>$7,000</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Cuadro</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Cuadro" value="7000" id="valor4"><label for="valor1">Aluminio</label><strong>$7,000</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Cuadro" value="5600" id="valor5"><label for="valor2">Acero</label><strong>$5,600</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Cuadro" value="11000" id="valor6"><label for="valor3">Carbono</label><strong>$11,000</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Cambios</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Cambios" value="8000" id="valor7"><label for="valor1">Internos</label><strong>$8,000</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Cambios" value="6400" id="valor8"><label for="valor2">Externos</label><strong>$6,400</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Cambios" value="5000" id="valor9"><label for="valor3">Única</label><strong>$5,000</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Ruedas</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Ruedas" value="1100" id="valor10"><label for="valor1">26 P</label><strong>$1,100</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Ruedas" value="1300" id="valor11"><label for="valor2">28 P</label><strong>$1,300</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Ruedas" value="1500" id="valor12"><label for="valor3">30 P</label><strong>$1,500</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Frenos</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Frenos" value="1100" id="valor13"><label for="valor1">Llanta</label><strong>$1,100</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Frenos" value="1300" id="valor14"><label for="valor2">Disco</label><strong>$1,300</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Frenos" value="1500" id="valor15"><label for="valor3">Hidarulico</label><strong>$1,500</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Manillar</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Manillar" value="600" id="valor16"><label for="valor1">Plano</label><strong>$600</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Manillar" value="700" id="valor17"><label for="valor2">Riser</label><strong>$700</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Manillar" value="800" id="valor18"><label for="valor3">Mariposa</label><strong>$800</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Acessorios</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="checkbox" name="Acessorios" value="1000" id="valor19"><label for="valor1">Portaequipaje</label><strong>$1,000</strong>
+                </div>
+                <div>
+                    <input type="checkbox" name="Acessorios" value="400" id="valor20"><label for="valor2">Guardabarros</label><strong>$400</strong>
+                </div>
+                <div>
+                    <input type="checkbox" name="Acessorios" value="600" id="valor21"><label for="valor3">Luces Led</label><strong>$600</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categoria">
+            <div class="name">
+                <h2>Asiento</h2>
+            </div>
+            <div class="target">
+                <div>
+                    <input type="radio" name="Asiento" value="600" id="valor22"><label for="valor1">Colchon</label><strong>$600</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Asiento" value="700" id="valor23"><label for="valor2">Gel</label><strong>$700</strong>
+                </div>
+                <div>
+                    <input type="radio" name="Asiento" value="800" id="valor24"><label for="valor3">Sport</label><strong>$800</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--
+    <div class="botones">
+        <button id="btn_aceptar">Aceptar</button>
+        <button id="btn_reiniciar">Reiniciar</button>
+    </div>
+-->
+
+<div class="botones">
+    <button id="btn_aceptar" onclick="calcularTotal()">Aceptar</button>
+    <button id="btn_reiniciar" onclick="reiniciar()">Reiniciar</button>
+</div>
+
+<div id="factura" ></div> <!--class="factura"-->
+
+<footer></footer>
+    <script src="cotizador.js"></script>
+</body>
+</html>

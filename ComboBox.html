@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComboBox</title>
+
+    <link rel="stylesheet" href="ComboBox.css">
+    <link rel="shortcut icon" href="imgs/icon-bici.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+        
+        <div class="icon">
+            <a href="#" class="enlace"> 
+                <img class="logo" src="imgs/icon-bici.png" alt="logo">
+            </a>
+            <h1 class="name-web">ComboBox</h1>
+        </div>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle"> <img class="menu" src="imgs/menu.png" alt="menu"> </label>
+
+        <nav class="navigation">
+            <ul class="">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cotizadorBicis.html">Cotizador</a></li> 
+                <li> 
+                    <a href="Formulario.html">Formulario</a>
+                </li>
+                <li> 
+                    <a href="#">ComboBox</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="instruccion">Completa las siguientes oraciones de forma correcta</h2>
+
+    <!-- EJEMPLO DE COMBOX
+        <label for="carreraseleccion">Selecciona la carrera de tu interés:</label>
+
+        <select name="carrera" id="carreraseleccion" onchange="ShowSelected();">
+            <option value="">Selecciona una opción</option>
+            <option value="isw">Ingeniería en software</option>
+            <option value="ni">Licenciatura en negocios internacionales</option>
+            <option value="if">Ingeniería en finanzas</option>
+            <option value="la">Licenciatura en administración</option>
+            <option value="tic">Ingeniería en TIC</option>
+            <option value="nano">Ingeniería en nanotecnología</option>
+        </select>
+    -->
+
+    <div class="content">
+        <section>
+            <div>
+                <label for="preg1">Bruselas, es la capital del país denominado: </label>
+                <select name="opciones" id="preg1">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Guatemala</option>
+                    <option value="1">Bélgica</option>   
+                    <option value="0">Buenos Aires</option>
+                    <option value="">Puerto Rico</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg2">La capital de Argentina es: </label>
+                <select name="opciones" id="preg2">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Guatemala</option>
+                    <option value="0">Belmopan</option>   
+                    <option value="1">Buenos Aires</option>
+                    <option value="0">Puerto Rico</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg3">San José es la capital de: </label>
+                <select name="opciones" id="preg3">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Brasil</option>
+                    <option value="0">Argentina</option>   
+                    <option value="0">Venezuela</option>
+                    <option value="1">Costa Rica</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg4">La capital de Venezuela es: </label>
+                <select name="opciones" id="preg4">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Tegucigalpa</option>
+                    <option value="0">Managua</option>   
+                    <option value="0">Panamá</option>
+                    <option value="1">Caracas</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg5">Brasilia, es la capital del país: </label>
+                <select name="opciones" id="preg5">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Colombia</option>
+                    <option value="1">Brasil</option>   
+                    <option value="0">Paraguay</option>
+                    <option value="1">Perú</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg6">La capital de Perú es: </label>
+                <select name="opciones" id="preg6">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Sucre</option>
+                    <option value="0">Bogotá</option>   
+                    <option value="0">Montevideo</option>
+                    <option value="1">Lima</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg7">Puerto España es la capital de: </label>
+                <select name="opciones" id="preg7">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Surinam</option>
+                    <option value="0">Bolivia</option>   
+                    <option value="0">Brasil</option>
+                    <option value="1">Trinidad y Tobago</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg8">Cuba, país cuya capital es: </label>
+                <select name="opciones" id="preg8">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Kingston</option>
+                    <option value="0">Santo Domingo</option>   
+                    <option value="1">La Habana</option>
+                    <option value="0">Castries</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg9">Managua, es la capital que pertenece a: </label>
+                <select name="opciones" id="preg9">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Panamá</option>
+                    <option value="0">Honduras</option>   
+                    <option value="1">Nicaragua</option>
+                    <option value="0">Belice</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="preg10">Ecuador, tiene como capital: </label>
+                <select name="opciones" id="preg10">
+                    <option value="">Selecciona una opción</option>
+                    <option value="0">Parabarimo</option>
+                    <option value="0">Montevideo</option>   
+                    <option value="0">Asunción</option>
+                    <option value="1">Quito</option>   
+                </select>
+                <p id='textosalidauno'></p>
+                <p id='textosalidados'></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="botones">
+        <button id="btn_aceptar" onclick="calcularResultado()">Aceptar</button>
+        <button id="btn_reiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <h2 id="resultado">Numero de aciertos: <span id="resultadoNumero"></span></h2>
+
+    <footer></footer>
+
+    <script src="ComboBox.js"></script>
+</body>
+</html>

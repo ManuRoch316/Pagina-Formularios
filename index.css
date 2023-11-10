@@ -1,0 +1,70 @@
+body{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+a:hover{
+    color: #eb5e28;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),url(imgs/pexels-anastasia-shuraeva-8926943.jpg);
+    height: 100vh;
+    background-size: cover;
+ }
+
+ .bot{
+    font-size: 17px;
+    background: none;
+    padding:  20px 45px 20px 45px;
+    color: white;
+    cursor: pointer;
+    border: solid white;  
+}
+
+.bot:hover{
+    font-size: 17px;
+    background: orangered;
+    padding:  20px 45px 20px 45px;
+    color: white;
+    cursor: pointer;
+    border: solid orangered;
+}

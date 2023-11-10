@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*, /*Resetear el css, quitar margi por defaul*/
+*::before,
+*::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 3em;
+    background-color: var(--grey);
+}
+
+:root /*Colores predeterminados*/
+{
+    --ceniza: #84a98c;
+    --turq: #06d6a0;
+    --green-light: #7acbcd;
+    --black: #001219;
+
+    --orange: #eb5e28;
+    --black-grey: #252422;
+    --grey: #403d39; 
+    --grey-white: #ccc5b9;
+    --white-grey: #fffcf2;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--orange);
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;/*Posicionar el menu delante de cualquier otro elemento*/
+    border-bottom: .3rem solid var(--black-grey);
+
+}
+
+
+.icon{
+    display: flex;/*Alinea todos los elementos*/
+    align-items: center;
+    justify-content: center;/*Mover elementos al centro*/
+    gap: 2.2rem;/*Espacio (separación) de elementos*/
+}
+
+.logo{/*icono de sitio*/
+    margin-left: 1.2rem;
+    width: 3rem;
+}
+
+.name-web{/*Nombre de la Pagina*/
+    color: var(--black-grey);
+    font-weight: 700;
+    text-decoration: none; /*quitar subrayado de los enlaces $$$$$*/
+}
+
+.menu{
+    width: 2rem;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.header .navigation ul li{ /*Afecta las listas*/
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a{/*afecta los enlaces*/
+    font-size: 16px;
+    color: var(--grey-white);
+    text-decoration: none; /*quitar subrayado de los enlaces*/
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover{
+    background-color: var(--black-grey);
+}
+
+.header .navigation ul li ul{/*afecta las listas de las listas*/
+    position: absolute;
+    right: 0%;
+    width: 300px;
+    background-color: var(--grey);
+    display: none;/*las listas de las listas no tendran un display*/
+}
+
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/*P%#$%#$%#$%#$%#$%#$%#$%#$%#$%#$%$#%#$%#$%$%$%#%#%%$#*/
+/*Acomoda las listas de las listas de manera vertical, en formal ordenada*/
+.header .navigation ul li ul li ul{
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+.header .navigation ul li ul li{
+    width: 100%;
+}
+
+.header .navigation ul li:hover > ul{
+    display: initial; /*##Con este display las listas de las opciones aparecen##*/
+}
+
+/*MENU*/
+#toggle,
+.header label{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    width: 45px;
+    height: 35px;
+}
+
+/*P%#$%#$%#$%#$%#$%#$%#$%#$%#$%#$%$#%#$%#$%$%$%#%#%%$#*/
+/*P%#$%#$%#$%#$%#$%#$%#$%#$%#$%#$%$#%#$%#$%$%$%#%#%%$#*/
+/*P%#$%#$%#$%#$%#$%#$%#$%#$%#$%#$%$#%#$%#$%$%$%#%#%%$#*/
+/*P%#$%#$%#$%#$%#$%#$%#$%#$%#$%#$%$#%#$%#$%$%$%#%#%%$#*/
+
+.fondo-title{
+    margin-top: 3%;
+}
+
+.fondo-title {
+    position: relative;
+    text-align: center;
+    color: #fff; /* Color del texto */
+    padding: 0px 0; /* Ajusta el espacio superior e inferior del encabezado */
+}
+
+.fondo-difuminado {
+    background-image: url('imgs/Bici_titulo_imgGrande.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    height: 70vh; /* Ajusta la altura según tus necesidades */
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo-difuminado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.59); /* Color y opacidad del difuminado */
+    z-index: 1;
+}
+
+.title-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+    font-size: 4.5em; /* Ajusta el tamaño del texto según tus necesidades */
+    color: var(--orange);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra del texto */
+}
+
+.eslogan {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+    font-size: 1.6em; /* Ajusta el tamaño del texto según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra del texto */
+}
+
+
+/*Aqui empieza el GRID*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    height: 85vh;
+
+    & .Categoria{
+        padding: 10px;
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;
+        justify-content: center; */
+        margin: 1.2rem;
+        background-color: var(--orange);
+        /* border: 3px solid var(--black-grey); */
+        border-radius: 1rem;
+
+        & .target{
+            margin: 8px 20px;
+
+            & div{
+                padding: .5rem;
+            }
+
+            & input{
+                width: 20px; /* Ajusta el ancho según tus necesidades */
+                height: 20px; 
+            }
+
+            & label{
+                font-size: 1rem;
+                padding-left: .4rem;
+                font-weight: 500;
+            }
+        }
+
+        & strong{
+            display: block;
+            float: right;
+        }
+
+/**/
+        & .name{
+            /*background-color: var(--black);*/
+            /*border: 2px solid white;*/
+            color: var(--black-grey);
+            /* border-radius: .7rem; */
+            /*-webkit-text-stroke: .03rem var(--grey-white);*/
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        & p{
+            font-size: 13px;
+            text-align: center;
+            color: white;
+            -webkit-text-stroke: .1px black;
+        }
+    }
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button{
+        margin: 10px 50px;
+        padding: 10px 20px; /* Ajusta el tamaño del botón según sea necesario */
+        font-size: 25px;   /* Ajusta el tamaño del texto del botón según sea necesario */
+        background-color: var(--white-grey); /* Color de fondo del botón */
+        color: black;       /* Color del texto del botón */
+        border: none;       /* Elimina el borde del botón */
+        border-radius: 15px; /* Añade esquinas redondeadas al botón */
+        cursor: pointer;   
+
+    }
+
+    & button:hover{
+        background-color: #eb5e28;
+    }
+}
+
+
+
+/* */
+#factura {
+    background-color: #eb5e28;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+#factura h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--black-grey);
+}
+
+#factura ul {
+    list-style: none;
+    padding: 0;
+}
+
+#factura li {
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+#factura p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--black-grey);
+}
+

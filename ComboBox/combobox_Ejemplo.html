@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ComboBox_EJEMPLO</title>
+  </head>
+  <body>
+    
+  <label for="carreraseleccion">Selecciona la carrera de tu interés:</label>
+
+  <select id="example" name="carrera" id="carreraseleccion" onchange="ShowSelected();">
+    <option value="">Selecciona una opción</option>
+    <option value="isw">Ingeniería en software</option>
+    <option value="ni">Licenciatura en negocios internacionales</option>
+    <option value="if">Ingeniería en finanzas</option>
+    <option value="la">Licenciatura en administración</option>
+    <option value="tic">Ingeniería en TIC</option>
+    <option value="nano">Ingeniería en nanotecnología</option>
+  </select>
+  <p id='textosalidauno'></p>
+  <p id='textosalidados'></p>
+  <script type="text/javascript">
+      function ShowSelected()
+      {
+          /* Obtención de valor */
+          var valor = document.getElementById("carreraseleccion").value;
+          /* Obtención de texto */
+          var combo = document.getElementById("carreraseleccion");
+          var textocombo = combo.options[combo.selectedIndex].text; //en vez de combo que sea select
+          textosalidauno.innerText= "El valor del componente seleccionado es" + " " + valor;
+          textosalidados.innerText = "El texto del componente seleccionado es" + " " + textocombo;
+      }
+  </script>
+  </body>
+</html>
